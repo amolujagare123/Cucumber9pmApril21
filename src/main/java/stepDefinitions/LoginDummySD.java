@@ -3,6 +3,7 @@ package stepDefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class LoginDummySD {
 
@@ -51,5 +52,7 @@ public class LoginDummySD {
     @Then("There should be an error message")
     public void there_should_be_an_error_message() {
         System.out.println("There should be an error message");
+
+        Assert.assertEquals("this test is failed",true,false);
     }
 }
